@@ -9,6 +9,9 @@ body {
   color: var(--main-color);
   line-height: calc(22 / 16);
 }
+body.active {
+  overflow-y: hidden;
+}
 
 .container {
   max-width: 1230px;

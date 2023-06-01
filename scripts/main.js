@@ -2,11 +2,8 @@ const tabItems = document.querySelectorAll(".tabs__btn-item");
 const tabContent = document.querySelectorAll(".tabs__content-item");
 const navBtn = document.querySelector(".nav-btn");
 const menu = document.querySelector(".menu");
-
-navBtn.addEventListener('click', () => {
-  menu.classList.toggle('active')
-  navBtn.classList.toggle('active')
-})
+const body = document.querySelector("body");
+const menuLink = document.querySelectorAll(".menu__link");
 
 const open = (e) => {
   const tabTarget = e.currentTarget;
@@ -29,3 +26,15 @@ const open = (e) => {
 tabItems.forEach((item) => {
   item.addEventListener("click", open);
 });
+
+navBtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  navBtn.classList.toggle("active");
+  body.classList.toggle("active");
+});
+
+menuLink.forEach((link) => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active')
+  })
+})
