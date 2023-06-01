@@ -11,10 +11,10 @@ body {
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1230px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .section {
@@ -149,6 +149,7 @@ body {
 }
 .tabs__content {
   min-height: 320px;
+  position: relative;
 }
 .tabs__content-item {
   display: grid;
@@ -162,6 +163,7 @@ body {
 }
 .tabs__content-item--active {
   opacity: 1;
+  position: static;
 }
 .tabs__content-img {
   object-fit: cover;
@@ -198,10 +200,12 @@ body {
   font-size: 13px;
   color: var(--light-color);
 }
-
+.game {
+  position: relative;
+}
 .game__inner {
   display: grid;
-  grid-template-columns: 300px auto;
+  grid-template-columns: repeat(4, 1fr);
 }
 .game__title {
   margin-bottom: 50px;
@@ -233,10 +237,6 @@ body {
   font-weight: 700;
   width: 225px;
   text-align: center;
-}
-.game__items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 .game__item {
   padding: 20px;
@@ -463,3 +463,5 @@ body {
   gap: 0 20px;
   justify-self: end;
 }
+
+
