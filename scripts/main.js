@@ -5,6 +5,7 @@ const menu = document.querySelector(".menu");
 
 navBtn.addEventListener('click', () => {
   menu.classList.toggle('active')
+  navBtn.classList.toggle('active')
 })
 
 const open = (e) => {
