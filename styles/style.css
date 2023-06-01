@@ -34,6 +34,9 @@ body {
   align-items: center;
   height: 80px;
 }
+.nav-btn {
+  display: none;
+}
 .menu {
   display: flex;
   gap: 0 20px;
@@ -47,6 +50,7 @@ body {
 .basket {
   position: relative;
   justify-self: end;
+  margin-right: 12px;
 }
 
 .basket__counter {
@@ -463,5 +467,3 @@ body {
   gap: 0 20px;
   justify-self: end;
 }
-
-

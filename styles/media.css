@@ -14,7 +14,8 @@
     align-items: center;
     grid-template-rows: 1fr 1fr 1fr;
   }
-  .footer .menu, .footer .social {
+  .footer .menu,
+  .footer .social {
     justify-self: center;
   }
   .footer .logo {
@@ -47,7 +48,7 @@
     gap: 20px;
   }
   .game__item:not(:last-child) {
-      border: 1px solid var(--gradient-color);
+    border: 1px solid var(--gradient-color);
   }
   .accessories__items {
     grid-template-columns: 1fr 1fr;
@@ -55,7 +56,52 @@
   }
   .accessories__item + .accessories__item {
     border: 1px solid var(--gradient-color);
-}
+  }
+  .header {
+    position: fixed;
+    background: #fff;
+    left: 0;
+    right: 0;
+  }
+  .menu {
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    color: #000;
+    z-index: 1;
+    top: 81px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transform: translate(-110%);
+    transition: transform 0.3s linear;
+  }
+  .menu.active {
+    transform: translate(0);
+  }
+  .menu__item {
+    border-bottom: 2px solid var(--gradient-color);
+    width: 100%;
+  }
+  .menu__link {
+    padding: 10px 10px;
+    display: block;
+    width: 100%;
+
+  }
+  .nav-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+
+  }
 }
 
 @media (max-width: 768px) {
@@ -121,12 +167,12 @@
     display: block;
   }
   .tabs__content-img {
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
   .tabs__btn {
     column-count: 1;
   }
-  
+
   .tabs__content-box {
     margin-bottom: 20px;
   }
@@ -184,7 +230,6 @@
   .game__descr {
     display: flex;
     flex-direction: column;
-
   }
   .game__descr-link {
     align-self: center;
